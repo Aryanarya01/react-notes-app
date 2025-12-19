@@ -1,0 +1,189 @@
+ body {
+  margin: 0;
+  padding: 0;
+  height: 100%;          /* full viewport height */
+}
+
+.outer {
+  background-color: #0f172a;
+  height: auto;
+  width: 100vw;
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+}
+
+.inner {
+  width: 50%;
+    height: 100vh;    
+  margin: 2rem 0;
+  background: rgba(30, 41, 59, 0.4);
+  backdrop-filter: blur(12px); /* Blur effect */
+  border-radius: 16px; /* Smooth rounded box */
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 20px rgba(106, 0, 255, 0.6), 0 0 40px black;
+}
+.searchBox h1 {
+  font-weight: 800;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #e2e8f0;
+  margin-bottom: 1.5rem;
+  margin-left: 4rem;
+}
+.searchBox {
+  margin: 2.5rem 10rem;
+
+  width: 75%; /* parent width full page ke 90% */
+  max-width: 900px; /* optional max width */
+  margin: 2.5rem auto; /* center horizontally */
+}
+
+.searchBox input {
+  height: 50px;
+  margin-right: 1rem;
+  flex: 1;
+  border-radius: 45px;
+  background-color: rgba(255, 255, 255, 0.15) !important;
+  color: #e2e8f0;
+  font-size: large;
+  font-weight: 500;
+  border: none;
+  outline: none;
+  padding: 0 20px;
+}
+.searchBox input:focus {
+  border-radius: 2px solid #7c3aed;
+  box-shadow: 0 0 10px #6d28d9;
+}
+
+.searchForm {
+  display: flex;
+  align-items: center;
+}
+.searchBox button {
+  background-color: #7c3aed;
+  height: 50px;
+  padding: 0 25px;
+  color: white;
+  border-radius: 45px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 0 20px #6d28d9;
+}
+.searchBox button:hover {
+  background-color: #6d28d9; /* Darker hover purple */
+}
+/* .infoComp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+} 
+.temperature {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: center;
+  border: 2px solid #7c3aed;
+  border-radius: 50%;  
+  padding: 1rem;  
+  width: 200px;  
+  height: 200px;
+} */
+ 
+/* Bottom 3 divs container */
+/* .bottomInfo {
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+} */
+
+/* Each small box */
+/* .bottomBox {
+ height: 9rem;
+ width: 10rem;
+  background: rgba(255,255,255,0.1);
+  border-radius: 12px;
+  color: #e2e8f0;
+  font-weight: 500;
+  margin-top: 5.8rem;
+} */
+ 
+
+
+/*    new */
+
+/* Main container */
+.infoComp {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  color: white;
+  max-width: 400px;
+  margin: 2rem auto;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Temperature section */
+.temperature {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.temperature i {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.temperature p {
+  margin: 0.3rem 0;
+}
+
+/* Bottom boxes container */
+.bottomInfo {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  gap: 1rem;
+  margin-top: 6rem;
+}
+
+/* Individual bottom box */
+.bottomBox {
+  flex: 1;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  padding: 1rem;
+  text-align: center;
+  backdrop-filter: blur(8px);
+  box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+  transition: transform 0.2s, box-shadow 0.2s;
+  cursor: default;
+}
+
+.bottomBox:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+}
+
+.bottomBox i {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  margin: auto;
+  display: block;
+  color: #7c3aed;
+}
+
+.bottomBox p {
+  margin: 0.2rem 0;
+  font-size: 0.9rem;
+  color: #ddd;
+}
