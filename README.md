@@ -23,7 +23,6 @@ A simple and user-friendly **Notes Application** built using **React.js**.
 - JavaScript (ES6)
 - HTML5
 - CSS3
-- Browser localStorage
 
  
 
